@@ -1,0 +1,63 @@
+<! DOCTYPE HTML>
+<html lang = "pt-BR">
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP|Slabo+27px" rel="stylesheet">
+        <meta charset="utf-8">
+        <tittle></tittle>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/javascript" src="json/info.json"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <meta name ="viewport" content="width=device-width,initial-scale=1.0">
+        
+    </head>
+    <body>
+        <div class="backgroundTelaInicial" id ="inicio">
+            <h1>Jogo dos logotipos</h1>
+            <img class="paginaInicialImg" src="img/comecoImg.png">
+            
+            <div class="msgDificuldade"><h3>Dificuldade do jogo:</h3></div>
+            <div class="divOpcoes">
+                <div class="divBotaoOpcao">
+                    <div class="divColunaleft"><button onclick="selectLevel(0)">A</button></div>
+                    <div class="divColunaRight">Facíl</div>
+                </div>
+                <div class="divBotaoOpcao">
+                    <div class="divColunaLeft"><button onclick="selectLevel(1)">B</button></div> 
+                    <div class="divColunaRight">Intermediário</div> 
+                </div>
+                <div class="divBotaoOpcao">
+                    <div class="divColunaLeft" ><button onclick="selectLevel(2)">C</button></div>
+                    <div class="divColunaRight">Difícil</div>
+                </div>
+            </div>
+            
+        </div> 
+
+
+        <div class="backgroundJogo" id ="jogo"> 
+            <h1>Jogo dos logotipos</h1>
+            <div class="pontuacao"><h3 id = "pontos">Pontos:0</h3></div>
+            <img id = "logoAtual" src="img/teste.png">
+            
+            <div class="divOpcoes">
+                <div class="divBotaoOpcao">
+                    <div class="divColunaleft"><button onclick="calculaAcerto(0)">A</button></div>
+                    <div class="divColunaRight" id = "op0">testeeeeeeeeeeeee1</div>
+                </div>
+                <div class="divBotaoOpcao">
+                    <div class="divColunaLeft"><button onclick="calculaAcerto(1)">B</button></div> 
+                    <div class="divColunaRight" id = "op1">testeeeeeeeeeeee2</div> 
+                </div>
+                <div class="divBotaoOpcao">
+                    <div class="divColunaLeft"><button onclick="calculaAcerto(2)">C</button></div>
+                    <div class="divColunaRight" id = "op2">testeeeeeeeeeeee3</div>
+                </div>
+                <div class="divBotaoOpcao">
+                    <div class="divColunaLeft"><button onclick="calculaAcerto(3)">D</button> </div>
+                    <div class="divColunaRight" id = "op3">testeeeeeeeeeeee4</div>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+</html>    

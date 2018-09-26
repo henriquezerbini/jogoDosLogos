@@ -1,0 +1,112 @@
+h1{
+    text-align: center;
+    color: #D9D3B3;
+    font-family: 'Noto Serif JP', sans-serif;
+} 
+h3{
+    display: inline;
+}
+.backgroundJogo{
+    display: block;
+    background-color: #499B8F;
+    border-radius: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 810px;
+}
+.backgroundTelaInicial{
+    display: block;
+    background-color: #FF4E1A;
+    border-radius: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 810px;
+}
+#jogo{
+    display:none;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 364px;
+    border: solid 1px;
+    border-color: #2C2020;
+}
+img.paginaInicialImg{
+    width:688px;
+}
+@media only screen and (max-width:900px){
+    .backgroundJogo{
+        margin-left: 5%;
+        margin-right: 5%;
+        height:auto;
+        width: 85%;
+    }
+    .backgroundTelaInicial{
+        margin-left: 5%;
+        margin-right: 5%;
+        height:auto;
+        width: 85%;
+    }
+    img{
+        width: 40%;
+    }
+    img.paginaInicialImg{
+        width:85%;
+    }
+}
+button{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-family:'Slabo 27px', serif;
+}
+.divOpcoes{
+    margin: 4px;
+}
+.divBotaoOpcao{
+    display: table;
+    width:100%;
+    height: 35px;
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+
+.divColunaLeft{
+    display:table-cell;
+    width: 30%;
+    vertical-align: middle;
+    padding: 2px;
+    font-family: 'Slabo 27px', serif;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    color:white;
+    background-color: #D9D3B3;
+}
+
+.divColunaRight{
+    display:table-cell;
+    vertical-align: middle;
+    padding-left: 5px;
+    
+    font-family: 'Slabo 27px', serif;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    color: #D9D3B3;
+    background-color:#2C2020;
+    border: 1px solid #D9D3B3;
+}
+.pontuacao{
+    margin-right: 10px;
+    text-align:right ;
+    color:#D9D3B3;
+    font-family: 'Slabo 27px', serif;
+}
+.msgDificuldade{
+    margin-top: 5px;
+    margin-left: 10px;
+    color:#D9D3B3;
+    font-family: 'Slabo 27px', serif;
+}
