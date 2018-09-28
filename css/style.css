@@ -25,6 +25,9 @@ h3{
 #jogo{
     display:none;
 }
+#final{
+    display: none;
+}
 img{
     display: block;
     margin-left: auto;
@@ -99,10 +102,17 @@ button{
     border: 1px solid #D9D3B3;
 }
 .pontuacao{
-    margin-right: 10px;
-    text-align:right ;
+    margin-left: 10px;
     color:#D9D3B3;
     font-family: 'Slabo 27px', serif;
+    display: inline;
+    
+}
+.vidas{
+    margin-left: 10px;
+    color:#D9D3B3;
+    font-family: 'Slabo 27px', serif;
+    display: inline;
 }
 .msgDificuldade{
     margin-top: 5px;

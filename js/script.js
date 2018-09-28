@@ -11,6 +11,9 @@ var jogo = {
     },
     errou: function(){
         this.numVidas -= 1;
+        alert("Você errou!!! A resposta certa era:" + this.infoLogo[this.logoAtual].nome);
+        document.getElementById("vidas").innerHTML = "Vidas:" + this.numVidas;
+
     },
     getNumVidas: function(){
         return this.numVidas;
@@ -47,11 +50,20 @@ function selectLevel(difficulty){
 function setScreen(){
     if(jogo.usedNum.length === jogo.infoLogo.length)
     {
-        alert("O jogo terminou");
         document.getElementById("jogo").style.display = "none";
+        document.getElementById("final").style.display = "block";
+        document.getElementById("pontosFinais").innerHTML = "Pontos:" + jogo.numPontos;
+        document.getElementById("imgFim").src = "img/tela-vitoria.png";
+    }
+    else if(jogo.numVidas < 0)
+    {
+        document.getElementById("jogo").style.display = "none";
+        document.getElementById("final").style.display = "block";
+        document.getElementById("pontosFinais").innerHTML = "Pontos:" + jogo.numPontos;
     }
     else
     {
+
         var auxNum , test;
         do{
             auxNum = randNum(jogo.infoLogo.length);
@@ -113,4 +125,8 @@ function calculaAcerto(i){
         jogo.errou();
     }
     setScreen();
+}
+
+function playAgain(){
+    window.location.replace("index.html");
 }
